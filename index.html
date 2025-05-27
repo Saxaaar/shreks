@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кто ты из Шрека?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen">
+        <h1>Кто ты из мира Шрека?</h1>
+        <button onclick="startQuiz()">Начать тест</button>
+    </div>
+
+    <div id="quiz" class="screen hidden">
+        <div class="question">
+            <h2 id="question-text"></h2>
+            <div class="options"></div>
+        </div>
+    </div>
+
+    <div id="result" class="screen hidden">
+        <div class="character-card">
+            <img id="character-img" src="" alt="Персонаж">
+            <h2 id="character-name"></h2>
+            <p id="character-desc"></p>
+            <button onclick="restartQuiz()">Пройти ещё раз</button>
+        </div>
+    </div>
+
+    <!-- Подключение Tilt.js для 3D-эффекта -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
